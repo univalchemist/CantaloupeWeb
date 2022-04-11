@@ -1,0 +1,15 @@
+{
+  "threshold": 0,
+  "absolute": false,
+  "mode": "strict",
+  "blame": true,
+  "path": ["./"],
+  "ignore": [
+    "**/*/node_modules",
+    "**/*/.next",
+    "**/*/public",
+    "**/*/data",
+    "**/*/pages",
+    "**/*/assets"
+  ]
+}

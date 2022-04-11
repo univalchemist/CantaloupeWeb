@@ -1,0 +1,5 @@
+export enum CantaloupeMoreCardType {
+  PREPAID_CARD = 'PREPAID CARD',
+  PAYROLL_DEDUCT_CARD = 'PAYROLL DEDUCT CARD',
+  CRYPTO = 'CRYPTO CARD',
+}

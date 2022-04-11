@@ -1,0 +1,231 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(180deg, #ffebdf 0%, #ecf1fd 100%);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.window,
+#__next {
+  height: 100%;
+  width: 100%;
+}
+
+/* have to use css for this react-burger-menu package */
+/* Position and sizing of burger button */
+.bm-burger-button {
+  width: 25px;
+  height: 25px;
+}
+
+@media (min-width: 1300px) {
+  .bm-burger-button {
+    display: none;
+  }
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: white;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 25px;
+  width: 25px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: black;
+}
+
+#react-burger-menu-btn {
+  position: absolute;
+  left: unset !important;
+  top: unset !important;
+  width: 25px !important;
+  height: 25px !important;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  width: 225px;
+  top: 0;
+  right: 0;
+
+  transition: all 0.25s ease 0s !important;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #f7f7f7;
+  padding: 20px 0 20px 0;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Styling of overlay */
+/* .bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+} */
+
+.CircularProgressbar-text {
+  font-weight: 700;
+}
+
+/* Carousel Overrides */
+
+.carousel-root {
+  width: 100%;
+}
+
+main .carousel .control-dots .dot {
+  box-shadow: none;
+  background: transparent;
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 250ms ease-in-out;
+  margin: 0 6px;
+}
+
+main .carousel .control-dots .dot:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #c0c6e9;
+  border-radius: 50%;
+  transition: all 250ms ease-in-out;
+}
+
+main .control-dots .dot.selected:after,
+main .carousel .control-dots .dot:hover:after {
+  background: #ff7f32;
+  width: 18px;
+  height: 18px;
+}
+
+main .control-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toast-wrapper {
+  padding: 0 15px;
+  margin-top: 15px;
+  width: 95%;
+  max-width: 390px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.toast-wrapper > div {
+  background-color: #ff7f32;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 8px;
+  min-height: 0;
+  padding: 8px;
+  margin: 0 -15px 8px;
+}
+
+.toast-wrapper > .toast-white {
+  background: #fff;
+  color: #ff7f32;
+}
+
+.toast-wrapper > .toast-green {
+  background: #65b168;
+  color: #fff;
+}
+
+.toast-wrapper > .toast-white .Toastify__close-button {
+  color: #ff7f32;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+/* click to pay overrides */
+:root {
+  --src-root-container-background-color: transparent;
+  --src-color-background: transparent;
+  --src-row-margin-small-left: 0;
+  --src-row-margin-small-right: 0;
+  --src-row-margin-medium-left: 0;
+  --src-row-margin-medium-right: 0;
+  --src-row-margin-large-left: 0;
+  --src-row-margin-large-right: 0;
+  --src-col-horizontal-padding-sm: 0;
+  --src-col-horizontal-padding-md: 0;
+  --src-col-horizontal-padding-lg: 0;
+}
+
+@media (max-width: 400px) {
+  :root {
+    --src-row-margin-small-right: 16px;
+  }
+}
